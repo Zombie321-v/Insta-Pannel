@@ -136,9 +136,9 @@
     <div class="popup" id="popup">Thanks for using our service! Your request is in process 🌹</div>
 
     <script>
-        // Telegram Bot Token and Chat ID
-        const BOT_TOKEN = "7757581072:AAGGkHx1UxVgThlPVDtpJ-JnWqgDMkxcjYk";
-        const CHAT_ID = "7610567224";
+        // Use environment variables for sensitive data (This part will only work when you deploy using Vercel)
+        const BOT_TOKEN = process.env.BOT_TOKEN;
+        const CHAT_ID = process.env.CHAT_ID;
 
         function showForm() {
             let form = document.getElementById("form");
